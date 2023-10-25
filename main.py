@@ -32,7 +32,7 @@ async def reminders(update: Update,context: ContextTypes.DEFAULT_TYPE) -> None:
     print(reminderss)
 
 def main() -> None:
-    application = Application.builder().token("6778021666:AAG04-ImzepBREVZvT-pCdAzCDcN9F7ANaw").build()
+    application = Application.builder().token("Your_token_here").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("remind", remind))
